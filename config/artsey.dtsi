@@ -220,9 +220,11 @@
 		combo_layer_bt_select { key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
 		combo_bt_clr { key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
 		combo_layer_navigation { key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
-		combo_layer_functions { layers = <LAYER_ID_BASE>; key-positions = <KEY_S KEY_O>; bindings = <&sl LAYER_ID_BIG_FUNCTION>; };
+		/* TODO: Setup/Enable once Mouse Keys feature(s) are added to ZMK */
+		//combo_mouse { timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_A KEY_T KEY_Y>; bindings = <&none>; };
 	};
 };
+
 
 /*****************************************
  * Standard ARTSEY layer activation definitions
