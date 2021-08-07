@@ -99,7 +99,7 @@
 				LEADING_NONES                                          \
 				&kp C_MUTE &kp INS   &kp C_VOL_UP  &none               \
 				MIDDLE_NONES                                           \
-				&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&sk RSHFT  &kp DQT &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -112,7 +112,7 @@
 				LEADING_NONES                                          \
 				&none               &kp C_VOL_UP  &kp INS   &kp C_MUTE \
 				MIDDLE_NONES                                           \
-				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp PSCRN &sk RSHFT  \
+				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp DQT &sk RSHFT  \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -147,6 +147,31 @@
 };
 
 /*****************************************
+ * Define base layer chars for 'standard ARTSEY' or 'COLEMAK' inspired (you can add more by following the pattern below)
+ * Turn on the ARTSEY_COLEMAK definition above if you want this change
+ *****************************************/
+#define ARTSEY_BASE_A A
+#define ARTSEY_BASE_R R
+#define ARTSEY_BASE_T T
+#define ARTSEY_BASE_S S
+#define ARTSEY_BASE_E E
+#define ARTSEY_BASE_Y Y
+#define ARTSEY_BASE_I I
+#define ARTSEY_BASE_O O
+#define ARTSEY_COMBO_N N
+#if ARTSEY_COLEMAK
+#define ARTSEY_BASE_A T
+#define ARTSEY_BASE_R S
+#define ARTSEY_BASE_T R
+#define ARTSEY_BASE_S A
+#define ARTSEY_BASE_E N
+#define ARTSEY_BASE_Y E
+#define ARTSEY_BASE_I I
+#define ARTSEY_BASE_O O
+#define ARTSEY_COMBO_N Y
+#endif
+
+/*****************************************
  * Standard ARTSEY combo definitions
  * These should NOT be changed and are global in scope
  *****************************************/
@@ -156,7 +181,7 @@
 		combo_b { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_E KEY_O>; bindings = <&kp B>; };
 		combo_m { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp M>; };
 		combo_c { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
-		combo_n { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_I KEY_O>; bindings = <&kp N>; };
+		combo_n { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_I KEY_O>; bindings = <&kp ARTSEY_COMBO_N>; };
 		combo_d { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp D>; };
 		combo_p { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_E KEY_I KEY_O>; bindings = <&kp P>; };
 		combo_f { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_A KEY_R>; bindings = <&kp F>; };
@@ -195,8 +220,7 @@
 		combo_layer_bt_select { key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
 		combo_bt_clr { key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
 		combo_layer_navigation { key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
-		/* TODO: Setup/Enable once Mouse Keys feature(s) are added to ZMK */
-		//combo_mouse { timeout-ms = <TIMEOUT_COMBO>; key-positions = <KEY_A KEY_T KEY_Y>; bindings = <&none>; };
+		combo_layer_functions { layers = <LAYER_ID_BASE>; key-positions = <KEY_S KEY_O>; bindings = <&sl LAYER_ID_BIG_FUNCTION>; };
 	};
 };
 
@@ -239,9 +263,9 @@
 			label = "ARTSEY";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS A  &kp R     &kp T     &layer_numbers_kp LAYER_ID_NUMBERS S
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARTSEY_BASE_A  &kp ARTSEY_BASE_R     &kp ARTSEY_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARTSEY_BASE_S
 				MIDDLE_NONES
-				&layer_symbols_kp LAYER_ID_SYMBOLS E                &kp Y     &kp I     &layer_custom_kp LAYER_ID_CUSTOM O
+				&layer_symbols_kp LAYER_ID_SYMBOLS ARTSEY_BASE_E                &kp ARTSEY_BASE_Y     &kp ARTSEY_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARTSEY_BASE_O
 				TRAILING_NONES
 			>;
 		};
@@ -319,9 +343,9 @@
 			label = "ARTSEY";
 			bindings = <
 				LEADING_NONES
-				&layer_numbers_kp LAYER_ID_NUMBERS S        &kp T     &kp R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS A
+				&layer_numbers_kp LAYER_ID_NUMBERS ARTSEY_BASE_S        &kp ARTSEY_BASE_T     &kp ARTSEY_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARTSEY_BASE_A
 				MIDDLE_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM O          &kp I     &kp Y     &layer_symbols_kp LAYER_ID_SYMBOLS E
+				&layer_custom_kp LAYER_ID_CUSTOM ARTSEY_BASE_O          &kp ARTSEY_BASE_I     &kp ARTSEY_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARTSEY_BASE_E
 				TRAILING_NONES
 			>;
 		};

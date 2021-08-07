@@ -10,6 +10,7 @@
 
 // Left/Right
 #define ARTSEY_RIGHT 1
+#define ARTSEY_COLEMAK 1
 
 // ARTS Row
 #define KEY_A 0
