@@ -137,10 +137,10 @@
  * See documentation on "combos" for more detail
  *****************************************/
 #if !defined TIMEOUT_COMBO
-#define TIMEOUT_COMBO 250
+#define TIMEOUT_COMBO 200
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
-#define TIMEOUT_LAYER_HOLD 500
+#define TIMEOUT_LAYER_HOLD 200
 #endif
 &sk {
 	release-after-ms = <1000>;
