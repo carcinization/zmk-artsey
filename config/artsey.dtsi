@@ -141,7 +141,7 @@
 
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 125
+#define TIMEOUT_COMBO_2 50
 #endif
 #if !defined TIMEOUT_COMBO_3
 #define TIMEOUT_COMBO_3 150
