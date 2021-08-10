@@ -163,7 +163,7 @@
 }; 
 
 /*****************************************
- * .Define base layer chars for 'standard ARTSEY' or 'COLEMAK' inspired (you can add more by following the pattern below)
+ * Define base layer chars for 'standard ARTSEY' or 'COLEMAK' inspired (you can add more by following the pattern below)
  * Turn on the ARTSEY_COLEMAK definition above if you want this change
  *****************************************/
 #define ARTSEY_BASE_A A
