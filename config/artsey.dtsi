@@ -141,16 +141,16 @@
 
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 70
+#define TIMEOUT_COMBO_2 100
 #endif
 #if !defined TIMEOUT_COMBO_3
-#define TIMEOUT_COMBO_3 140
+#define TIMEOUT_COMBO_3 100
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 175
+#define TIMEOUT_COMBO_4 100
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
-#define TIMEOUT_LAYER_HOLD 225
+#define TIMEOUT_LAYER_HOLD 170
 #endif
 #if !defined TIMEOUT_STICKY_LEADER_KEY
 #define TIMEOUT_STICKY_LEADER_KEY 5000
