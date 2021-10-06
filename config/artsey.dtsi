@@ -117,13 +117,13 @@
  *    https://github.com/zmkfirmware/zmk/issues/905
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 175
+#define TIMEOUT_COMBO_2 125
 #endif
 #if !defined TIMEOUT_COMBO_3
-#define TIMEOUT_COMBO_3 175
+#define TIMEOUT_COMBO_3 125
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 175
+#define TIMEOUT_COMBO_4 125
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
 #define TIMEOUT_LAYER_HOLD 200
@@ -151,9 +151,9 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&kp C_MUTE &bootloader   &kp C_VOL_UP  &reset              \
+				&kp C_MUTE &bootloader   &ext_power EP_ON  &reset              \
 				MIDDLE_NONES                                           \
-				&sk RSHFT  &kp DQT &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&sk RSHFT  &kp DQT &ext_power EP_OFF &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -164,9 +164,9 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&reset            &kp C_VOL_UP  &bootloader   &kp C_MUTE \
+				&reset            &ext_power EP_ON  &bootloader   &kp C_MUTE \
 				MIDDLE_NONES                                           \
-				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp DQT &sk RSHFT  \
+				&mo LAYER_ID_CUSTOM &ext_power EP_OFF  &kp DQT &sk RSHFT  \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
