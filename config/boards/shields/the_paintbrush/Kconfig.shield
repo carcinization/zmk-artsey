@@ -6,3 +6,6 @@ config SHIELD_THE_PAINTBRUSH_LEFT
 
 config SHIELD_THE_PAINTBRUSH_RIGHT
 	def_bool $(shields_list_contains,the_paintbrush_right)
+
+config SHIELD_THE_PAINTBRUSH_RIGHT_TSRANEIO
+	def_bool $(shields_list_contains,the_paintbrush_right_tsraneio)
