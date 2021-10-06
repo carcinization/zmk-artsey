@@ -51,12 +51,12 @@
  * Define which layout you want to use
  *  ONLY ENABLE ONE OF THESE
 *****************************************/
-//#define ARTSEY_RIGHT 1
+// #define ARTSEY_RIGHT 1
 //#define ARTSEY_LEFT 1
-//#define ARTSEY_BIG 1
+// #define ARTSEY_BIG 1
 // If you use COLEMAK as your standard keyboard layout, you may want this
 //     This define will make base artsey keys and N more in line with COLEMAK
-//#define ARTSEY_COLEMAK 1
+// #define ARTSEY_COLEMAK 1
 
 /*****************************************
  * Define key positions used for combos
@@ -153,7 +153,7 @@
 				LEADING_NONES                                          \
 				&kp C_MUTE &kp INS   &kp C_VOL_UP  &none               \
 				MIDDLE_NONES                                           \
-				&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&sk RSHFT  &kp DQT &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -166,7 +166,7 @@
 				LEADING_NONES                                          \
 				&none               &kp C_VOL_UP  &kp INS   &kp C_MUTE \
 				MIDDLE_NONES                                           \
-				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp PSCRN &sk RSHFT  \
+				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp DQT &sk RSHFT  \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -330,7 +330,7 @@
 				BIG_BETWEEN_ROW_TWO_THREE_NONES
 				&kp TAB              &kp EQUAL                                                         &kp DEL               &kp AT                &ctrl_alt_kp LALT LCTRL
 				BIG_BETWEEN_ROW_THREE_THUMBS
-				&kp ENTER            &kp SPACE                                                         &mo LAYER_ID_BIG_SYM
+				&kp SPACE            &kp ENTER                                                         &mo LAYER_ID_BIG_SYM
 				BIG_TRAILING_NONES
 			>;
 		};
