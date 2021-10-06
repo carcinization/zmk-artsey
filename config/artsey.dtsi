@@ -151,7 +151,7 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&kp C_MUTE &kp INS   &kp C_VOL_UP  &none               \
+				&kp C_MUTE &bootloader   &kp C_VOL_UP  &reset              \
 				MIDDLE_NONES                                           \
 				&sk RSHFT  &kp DQT &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
@@ -164,7 +164,7 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&none               &kp C_VOL_UP  &kp INS   &kp C_MUTE \
+				&reset            &kp C_VOL_UP  &bootloader   &kp C_MUTE \
 				MIDDLE_NONES                                           \
 				&mo LAYER_ID_CUSTOM &kp C_VOL_DN  &kp DQT &sk RSHFT  \
 				TRAILING_NONES                                         \
