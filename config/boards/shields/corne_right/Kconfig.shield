@@ -9,3 +9,6 @@ config SHIELD_CORNE_5_COL_ARTSEY_RIGHT
 
 config SHIELD_CORNE_5_COL_ARTSEY_RIGHT_BIG
 	def_bool $(shields_list_contains,corne_5_col_artsey_right_big)
+
+config SHIELD_CORNE_5_COL_ARTSEY_RIGHT_BIG_TSRANEIO
+	def_bool $(shields_list_contains,corne_5_col_artsey_right_big_tsraneio)
