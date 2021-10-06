@@ -177,15 +177,15 @@
  * Define base layer chars for 'standard ARTSEY' or 'COLEMAK' inspired (you can add more by following the pattern below)
  * Turn on the ARTSEY_COLEMAK definition above if you want this change
  *****************************************/
-#define ARTSEY_BASE_A A
-#define ARTSEY_BASE_R R
-#define ARTSEY_BASE_T T
-#define ARTSEY_BASE_S S
-#define ARTSEY_BASE_E E
-#define ARTSEY_BASE_Y Y
-#define ARTSEY_BASE_I I
-#define ARTSEY_BASE_O O
-#define ARTSEY_COMBO_N N
+// #define ARTSEY_BASE_A A
+// #define ARTSEY_BASE_R R
+// #define ARTSEY_BASE_T T
+// #define ARTSEY_BASE_S S
+// #define ARTSEY_BASE_E E
+// #define ARTSEY_BASE_Y Y
+// #define ARTSEY_BASE_I I
+// #define ARTSEY_BASE_O O
+// #define ARTSEY_COMBO_N N
 #if ARTSEY_COLEMAK
 #define ARTSEY_BASE_A T
 #define ARTSEY_BASE_R S
