@@ -117,26 +117,27 @@
  *    https://github.com/zmkfirmware/zmk/issues/905
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 125
+#define TIMEOUT_COMBO_2 100
 #endif
 #if !defined TIMEOUT_COMBO_3
-#define TIMEOUT_COMBO_3 125
+#define TIMEOUT_COMBO_3 100
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 125
+#define TIMEOUT_COMBO_4 100
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
-#define TIMEOUT_LAYER_HOLD 200
+#define TIMEOUT_LAYER_HOLD 170
 #endif
 #if !defined TIMEOUT_STICKY_LEADER_KEY
 #define TIMEOUT_STICKY_LEADER_KEY 5000
 #endif
 &sk {
-	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
+    release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
 };
 &sl { 
-	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
-};
+    release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
+}; 
+
 
 /*****************************************
  * Define custom layer
