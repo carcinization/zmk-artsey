@@ -7,5 +7,5 @@ config SHIELD_CORNE_ARTSEY_LEFT
 config SHIELD_CORNE_5_COL_ARTSEY_LEFT
 	def_bool $(shields_list_contains,corne_5_col_artsey_left)
 
-config SHIELD_CORNE_5_COL_ARTSEY_LEFT_BIG
-	def_bool $(shields_list_contains,corne_5_col_artsey_left_big)
+config SHIELD_CORNE_5_COL_ARTSEY_LEFT_BIG_TSRANEIO
+	def_bool $(shields_list_contains,corne_5_col_artsey_left_big_tsraneio)
