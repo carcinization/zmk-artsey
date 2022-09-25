@@ -331,7 +331,7 @@
 				BIG_BETWEEN_ROW_TWO_THREE_NONES
 				&kp TAB              &kp EQUAL                                                         &kp DEL               &kp AT                &ctrl_alt_kp LALT LCTRL
 				BIG_BETWEEN_ROW_THREE_THUMBS
-				&kp ENTER           &kp SPACE                                                       &mo LAYER_ID_BIG_SYM
+				&kp SPACE           &kp ENTER                                                      &mo LAYER_ID_BIG_SYM
 				BIG_TRAILING_NONES
 			>;
 		};
@@ -451,7 +451,7 @@
 				BIG_BETWEEN_ROW_TWO_THREE_NONES
 				&ctrl_alt_kp LALT LCTRL                             &kp AT                &kp DEL               &kp EQUAL                                                      &kp TAB
 				BIG_BETWEEN_ROW_THREE_THUMBS
-				&mo LAYER_ID_BIG_SYM                                &kp SPACE             &kp ENTER
+				&mo LAYER_ID_BIG_SYM                                &kp ENTER             &kp SPACE
 				BIG_TRAILING_NONES
 			>;
 		};
